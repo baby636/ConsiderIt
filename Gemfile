@@ -2,13 +2,13 @@ source 'http://rubygems.org'
 
 #############
 # CORE
-gem 'rails', '~>5.2'
+gem 'rails', '~> 5.2', '>= 5.2.5'
 gem 'activerecord-session_store'  # Because CookieStore has race conditions w/ concurrent ajax requests
 
 #############
 # AUTHENTICATION
 gem "bcrypt"
-gem 'ruby-saml', '~> 1.11'
+gem 'ruby-saml', '~> 1.12', '>= 1.12.1'
 
 #############
 # DATABASE & DATABASE MIDDLEWARE
