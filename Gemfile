@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 #############
 # CORE
-gem 'rails', '~>5.2'
+gem 'rails', '~> 5.2', '>= 5.2.6.3'
 gem 'activerecord-session_store'  # Because CookieStore has race conditions w/ concurrent ajax requests
 
 #############
