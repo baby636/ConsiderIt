@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "chunk-manifest-webpack-plugin": "0.0.1",
-    "coffee-loader": "^0.7.2",
+    "coffee-loader": "^1.0.0",
     "coffee-script": "^1.12.7",
     "compression-webpack-plugin": "0.2.0",
     "@auth0/s3": "1.0.0",
