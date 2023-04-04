@@ -2,13 +2,13 @@ source 'http://rubygems.org'
 
 #############
 # CORE
-gem 'rails', '~>5.2'
+gem 'rails', '~> 6.1', '>= 6.1.7.3'
 gem 'activerecord-session_store'  # Because CookieStore has race conditions w/ concurrent ajax requests
 
 #############
 # AUTHENTICATION
 gem "bcrypt"
-gem 'ruby-saml', '~> 1.11'
+gem 'ruby-saml', '~> 1.12', '>= 1.12.1'
 
 #############
 # DATABASE & DATABASE MIDDLEWARE
@@ -61,7 +61,7 @@ group :production do
   gem 'aws-sdk-rails'
   gem 'aws-sdk-ses'
   gem 'aws-sdk-s3'
-  gem 'dalli' # memcaching: https://github.com/mperham/dalli/
+  gem 'dalli' , '>= 3.2.3' # memcaching: https://github.com/mperham/dalli/
 
   ##############
   # SEO
