@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 #############
 # CORE
-gem 'rails', '~>5.2'
+gem 'rails', '~> 6.1', '>= 6.1.7.5'
 gem 'activerecord-session_store'  # Because CookieStore has race conditions w/ concurrent ajax requests
 
 #############
@@ -13,15 +13,15 @@ gem 'ruby-saml', '~> 1.11'
 #############
 # DATABASE & DATABASE MIDDLEWARE
 gem "mysql2" 
-gem 'acts_as_tenant'
-gem 'activerecord-import' # bulk imports for performance
+gem 'acts_as_tenant', '>= 0.5.1'
+gem 'activerecord-import' , '>= 1.1.0' # bulk imports for performance
                           # Used for Opinion.import. Remove after eliminating the 
                           # need to create an unpublished opinion per proposal per user 
 
 #############
 # VIEWS / FORMS / CLIENT
 gem "haml"
-gem 'kt-paperclip'
+gem 'kt-paperclip', '>= 6.4.2'
 
 #############
 # BACKGROUND PROCESSING / EMAIL
@@ -57,8 +57,8 @@ end
 
 group :production do
   # gem 'backup' #https://github.com/meskyanichi/backup
-  gem 'exception_notification'
-  gem 'aws-sdk-rails'
+  gem 'exception_notification', '>= 4.5.0'
+  gem 'aws-sdk-rails', '>= 3.6.1'
   gem 'aws-sdk-ses'
   gem 'aws-sdk-s3'
   gem 'dalli' # memcaching: https://github.com/mperham/dalli/
@@ -66,6 +66,6 @@ group :production do
   ##############
   # SEO
   gem 'sitemap_generator' # creates sitemaps for you. Defined in config/sitemap.rb
-  gem 'prerender_rails' # takes html snapshots of pages and serves them to search bots
+  gem 'prerender_rails' , '>= 1.8.0' # takes html snapshots of pages and serves them to search bots
 
 end
