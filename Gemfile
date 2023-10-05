@@ -2,8 +2,8 @@ source 'http://rubygems.org'
 
 #############
 # CORE
-gem 'rails', '~>5.2'
-gem 'activerecord-session_store'  # Because CookieStore has race conditions w/ concurrent ajax requests
+gem 'rails', '~> 7.1', '>= 7.1.0'
+gem 'activerecord-session_store'  , '>= 2.1.0' # Because CookieStore has race conditions w/ concurrent ajax requests
 
 #############
 # AUTHENTICATION
@@ -13,7 +13,7 @@ gem 'ruby-saml', '~> 1.11'
 #############
 # DATABASE & DATABASE MIDDLEWARE
 gem "mysql2" 
-gem 'acts_as_tenant'
+gem 'acts_as_tenant', '>= 0.5.1'
 gem 'activerecord-import' # bulk imports for performance
                           # Used for Opinion.import. Remove after eliminating the 
                           # need to create an unpublished opinion per proposal per user 
@@ -51,14 +51,14 @@ gem 'google-api-client'
 group :development, :test do
   gem 'thin'
   gem 'ruby-prof', '~> 1.0.0'
-  gem 'mailcatcher'
+  gem 'mailcatcher', '>= 0.9.0'
   # gem 'rack-mini-profiler'
 end
 
 group :production do
   # gem 'backup' #https://github.com/meskyanichi/backup
-  gem 'exception_notification'
-  gem 'aws-sdk-rails'
+  gem 'exception_notification', '>= 4.5.0'
+  gem 'aws-sdk-rails', '>= 3.6.1'
   gem 'aws-sdk-ses'
   gem 'aws-sdk-s3'
   gem 'dalli' # memcaching: https://github.com/mperham/dalli/
