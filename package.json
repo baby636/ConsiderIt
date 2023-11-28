@@ -5,7 +5,7 @@
     "coffee-script": "^1.12.7",
     "compression-webpack-plugin": "0.2.0",
     "@auth0/s3": "1.0.0",
-    "webpack": "1.11.0",
+    "webpack": "2.2.0",
     "yamljs": "^0.2.1"
   }
 }
