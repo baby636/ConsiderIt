@@ -51,7 +51,7 @@ gem 'google-api-client'
 group :development, :test do
   gem 'thin'
   gem 'ruby-prof', '~> 1.0.0'
-  gem 'mailcatcher'
+  gem 'mailcatcher', '>= 0.10.0'
   # gem 'rack-mini-profiler'
 end
 
