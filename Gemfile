@@ -8,7 +8,7 @@ gem 'activerecord-session_store'  # Because CookieStore has race conditions w/ c
 #############
 # AUTHENTICATION
 gem "bcrypt"
-gem 'ruby-saml', '~> 1.11'
+gem 'ruby-saml', '~> 1.12', '>= 1.12.2'
 
 #############
 # DATABASE & DATABASE MIDDLEWARE
