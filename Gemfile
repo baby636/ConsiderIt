@@ -58,7 +58,7 @@ end
 group :production do
   # gem 'backup' #https://github.com/meskyanichi/backup
   gem 'exception_notification'
-  gem 'aws-sdk-rails'
+  gem 'aws-sdk-rails', '>= 4.2.0'
   gem 'aws-sdk-ses'
   gem 'aws-sdk-s3'
   gem 'dalli' # memcaching: https://github.com/mperham/dalli/
