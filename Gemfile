@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 #############
 # CORE
-gem 'rails', '~>5.2'
+gem 'rails', '~> 7.0', '>= 7.0.0'
 gem 'activerecord-session_store'  # Because CookieStore has race conditions w/ concurrent ajax requests
 
 #############
@@ -21,7 +21,7 @@ gem 'activerecord-import' # bulk imports for performance
 #############
 # VIEWS / FORMS / CLIENT
 gem "haml"
-gem 'kt-paperclip'
+gem 'kt-paperclip', '>= 7.0.0'
 
 #############
 # BACKGROUND PROCESSING / EMAIL
