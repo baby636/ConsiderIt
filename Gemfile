@@ -21,7 +21,7 @@ gem 'activerecord-import' # bulk imports for performance
 #############
 # VIEWS / FORMS / CLIENT
 gem "haml"
-gem 'kt-paperclip'
+gem 'kt-paperclip', '>= 7.0.0'
 
 #############
 # BACKGROUND PROCESSING / EMAIL
