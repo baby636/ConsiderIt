@@ -2,8 +2,8 @@ source 'http://rubygems.org'
 
 #############
 # CORE
-gem 'rails', '~>5.2'
-gem 'activerecord-session_store'  # Because CookieStore has race conditions w/ concurrent ajax requests
+gem 'rails', '~> 7.1', '>= 7.1.5.2'
+gem 'activerecord-session_store'  , '>= 2.1.0' # Because CookieStore has race conditions w/ concurrent ajax requests
 
 #############
 # AUTHENTICATION
@@ -13,8 +13,8 @@ gem 'ruby-saml', '~> 1.11'
 #############
 # DATABASE & DATABASE MIDDLEWARE
 gem "mysql2" 
-gem 'acts_as_tenant'
-gem 'activerecord-import' # bulk imports for performance
+gem 'acts_as_tenant', '>= 0.5.1'
+gem 'activerecord-import' , '>= 1.1.0' # bulk imports for performance
                           # Used for Opinion.import. Remove after eliminating the 
                           # need to create an unpublished opinion per proposal per user 
 
