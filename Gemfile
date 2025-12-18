@@ -60,7 +60,7 @@ group :production do
   gem 'exception_notification'
   gem 'aws-sdk-rails'
   gem 'aws-sdk-ses'
-  gem 'aws-sdk-s3'
+  gem 'aws-sdk-s3', '>= 1.208.0'
   gem 'dalli' # memcaching: https://github.com/mperham/dalli/
 
   ##############
