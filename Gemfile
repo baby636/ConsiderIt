@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 #############
 # CORE
 gem 'rails', '~>5.2'
-gem 'activerecord-session_store'  # Because CookieStore has race conditions w/ concurrent ajax requests
+gem 'activerecord-session_store'  , '>= 2.1.0' # Because CookieStore has race conditions w/ concurrent ajax requests
 
 #############
 # AUTHENTICATION
@@ -21,7 +21,7 @@ gem 'activerecord-import' # bulk imports for performance
 #############
 # VIEWS / FORMS / CLIENT
 gem "haml"
-gem 'kt-paperclip'
+gem 'kt-paperclip', '>= 6.4.2'
 
 #############
 # BACKGROUND PROCESSING / EMAIL
@@ -60,7 +60,7 @@ group :production do
   gem 'exception_notification'
   gem 'aws-sdk-rails'
   gem 'aws-sdk-ses'
-  gem 'aws-sdk-s3'
+  gem 'aws-sdk-s3', '>= 1.93.1'
   gem 'dalli' # memcaching: https://github.com/mperham/dalli/
 
   ##############
